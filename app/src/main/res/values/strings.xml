@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">我的音乐播放器</string>
+    <string name="action_contact">Contact</string>
+    <string name="random_play">随机播放</string>
+    <string name="order_play">顺序播放</string>
+    <string name="single_play">单曲循环</string>
+    <string name="music_all">全部音乐</string>
+    <string name="my_favorite">我的收藏</string>
+    <string name="latest_music">最近播放</string>
+    <string name="download">下载</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+
+</resources>

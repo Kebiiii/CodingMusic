@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liukebing.codingkeplayer.MusicPlayActivity"
+    android:background="#5c5b5b">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"  />"
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:layout_marginTop="420dp">
+
+        <ImageView
+            android:id="@+id/imageView_play_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:paddingStart="10dp"
+            android:src="@mipmap/order" />
+
+        <ImageView
+            android:id="@+id/imageView_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xin_bai"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageView_play_mode" />
+
+
+        <ImageView
+            android:id="@+id/imageView1_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView_play_mode"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="30dp"
+            android:src="@mipmap/next"/>
+
+        <ImageView
+            android:id="@+id/imageView_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/player_btn_play_normal"
+            android:layout_alignParentBottom="true"
+            android:paddingEnd="10dp"
+            android:layout_toStartOf="@+id/imageView1_next" />
+
+        <ImageView
+            android:id="@+id/imageView_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/prev"
+            android:layout_alignParentBottom="true"
+            android:paddingEnd="10dp"
+            android:layout_toStartOf="@+id/imageView_play_pause" />
+
+        <TextView
+            android:id="@+id/textView1_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView_play_mode"
+            android:layout_alignStart="@+id/imageView_play_mode"
+            android:layout_marginBottom="10dp"
+            android:text="00:00"
+            android:textColor="@android:color/darker_gray"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:layout_alignBottom="@+id/textView1_start_time"
+            android:layout_toRightOf="@+id/textView1_start_time"
+            android:layout_toLeftOf="@+id/textView1_end_time"/>
+
+        <TextView
+            android:id="@+id/textView1_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView_play_mode"
+            android:layout_alignBottom="@+id/textView1_start_time"
+            android:layout_alignEnd="@+id/imageView1_next"
+            android:text="00:00"
+            android:textColor="@android:color/darker_gray"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

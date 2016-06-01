@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:holo="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/latest_music"
+        android:orderInCategory="100"
+        holo:showAsAction="never"
+        android:title="@string/latest_music"/>
+    <item
+        android:id="@+id/favorite"
+        android:orderInCategory="200"
+        holo:showAsAction="never"
+        android:title="@string/my_favorite"/>
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="300"
+        holo:showAsAction="never"
+        android:title="@string/exit" />
+
+</menu>
